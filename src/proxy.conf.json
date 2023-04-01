@@ -1,6 +1,6 @@
 {
   "/*": {
-    "target": "https://github.houston.softwaregrp.net/",
+    "target": "https://github.com/",
     "secure": true,
     "changeOrigin": true,
     "logLevel": "debug"
