@@ -1,8 +1,6 @@
 {
-  "/*": {
-    "target": "https://github.houston.softwaregrp.net/",
-    "secure": true,
-    "changeOrigin": true,
-    "logLevel": "debug"
+  "/api": {
+    "target": "http://localhost:4200",
+    "secure": false
   }
 }

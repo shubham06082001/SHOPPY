@@ -1,4 +1,4 @@
-<mat-card class="max-w-7xl" *ngIf="cart.items.length">
+<mat-card class="full-width p-5 body" *ngIf="cart.items.length">
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 w-full">
     <ng-container matColumnDef="product">
       <th mat-header-cell *matHeaderCellDef>Product</th>
@@ -70,9 +70,11 @@
       </td>
       <td mat-footer-cell *matFooterCellDef>
         <button
-        (click)="onCheckout()"
-        mat-raised-button
-         color="primary" class="float-right">
+          (click)="onCheckout()"
+          mat-raised-button
+          color="primary"
+          class="float-right"
+        >
           Proceed to Checkout
         </button>
       </td>
@@ -82,9 +84,21 @@
     <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
   </table>
 </mat-card>
-<mat-card *ngIf="!cart.items.length">
-  <p>
-    Your cart is empty.
-    <button mat-raised-button routerLink="/home">Start Shopping</button>
-  </p>
+<mat-card *ngIf="!cart.items.length" class="m-2 p-4 body">
+  <div class="bg-red-100">
+    <p class="full-width justify-around para flex p-3 m-3">
+      Your cart is empty.
+      <button mat-raised-button routerLink="/home">Start Shopping</button>
+    </p>
+  </div>
+  <div
+    class="d-flex justify-content-center align-items-center mt-5 bg-pink-200"
+  >
+    <!-- <img
+      src="../../../assets/rider.png"
+      alt="empty cart"
+      class="w-60 h-60"
+    /> -->
+    <img src="../../../assets/empty.webp" alt="empty cart" />
+  </div>
 </mat-card>

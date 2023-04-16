@@ -28,7 +28,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void { }
 
   getTotal(items: Array<CartItem>): number {
-    console.log('this is cart: ' + this.cart.items);
 
     return this.cartService.getTotal(items);
   }
