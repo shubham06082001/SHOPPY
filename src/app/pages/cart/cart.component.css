@@ -1,0 +1,26 @@
+.body {
+  /* background-image: url('../../../assets/anim.gif'); */
+  background: linear-gradient(to bottom right, #1abc9c, #17c0eb, #2980b9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100% !important;
+  height: 100vh;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.para {
+  align-items: baseline;
+  text-align: center;
+  font-size: large;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

@@ -1,5 +1,8 @@
-<mat-drawer-container class="min-h-full max-7xl mx-auto" [autosize]="true">
-  <mat-drawer mode="side" opened>
+<mat-drawer-container
+  class="min-h-full max-7xl mx-auto bg-purple-100 body"
+  [autosize]="true"
+>
+  <mat-drawer mode="side" opened class="bg-purple-100 py-2 body">
     <app-filters (showCategory)="onShowCategory($event)"></app-filters>
   </mat-drawer>
   <mat-drawer-content class="p-6">

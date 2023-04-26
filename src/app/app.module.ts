@@ -29,6 +29,10 @@ import { CartComponent } from './pages/cart/cart.component';
 
 import { CartService } from './services/cart.service';
 import { StoreService } from './services/store.service';
+import { AboutComponent } from './pages/about/about.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 @NgModule({
@@ -40,6 +44,10 @@ import { StoreService } from './services/store.service';
     FiltersComponent,
     ProductBoxComponent,
     CartComponent,
+    AboutComponent,
+    NotFoundComponent,
+    FooterComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,10 @@
 .body {
+  /* background-image: url('../../../assets/cart-bg.jpg'); */
   background: linear-gradient(to bottom right, #1abc9c, #17c0eb, #2980b9);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  width: 100% !important;
+  padding: 30px;
 }
-
-
